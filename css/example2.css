@@ -1,0 +1,7 @@
+/*nth-child*/
+#nav li:nth-child(2n+1) {
+  background-color: #C2E5EB;
+}
+#parent-div {
+  background-color: #42B4C4;
+}

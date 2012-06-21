@@ -1,0 +1,37 @@
+#parent-div {
+  /*background-color:#CB4D8C;*/
+
+  color: #fff;
+  background-image: url(http://placekitten.com/g/800/500);
+  /*TRANFORMS*/
+
+  /*	
+	-webkit-transform: rotate(20deg);
+     -moz-transform: rotate(20deg);
+      -ms-transform: rotate(20deg);
+       -o-transform: rotate(20deg);
+          transform: rotate(20deg);
+*/
+
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  -o-transform: scale(0.5);
+  transform: scale(0.5);
+  /*
+	  -webkit-transform: translate(30px, 10px);
+     -moz-transform: translate(30px, 10px);
+      -ms-transform: translate(30px, 10px);
+       -o-transform: translate(30px, 10px);
+          transform: translate(30px, 10px);
+	*/
+
+  /*
+	-webkit-transform: skew(15deg, 15deg);
+     -moz-transform: skew(15deg, 15deg);
+      -ms-transform: skew(15deg, 15deg);
+       -o-transform: skew(15deg, 15deg);
+          transform: skew(15deg, 15deg);
+	*/
+
+}

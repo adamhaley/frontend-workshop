@@ -1,0 +1,136 @@
+/* CSS3 PROPERTIES
+// --------------------------------------------------
+*/
+/*RESET*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: 100%;
+}
+/*END RESET*/
+body {
+  font-family: verdana, helvetica, sans-serif;
+}
+div,
+ul,
+li {
+  margin: 10px;
+}
+/*DEFAULT STYLES*/
+#nav {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 800px;
+  border: 3px solid #000;
+}
+#nav li {
+  padding: 10px;
+  display: block;
+  width: 100px;
+  height: 100px;
+  float: left;
+  border: 3px solid #eee;
+}
+#nav li:hover {
+  cursor: pointer;
+  background-color: #efefef;
+}
+#lipsum {
+  clear: both;
+}
+#parent-div {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 800px;
+  height: 500px;
+  border: 3px solid #000;
+}
+#child1,
+#child2,
+#child3,
+#child4 {
+  position: relative;
+  border: inherit;
+  width: 150px;
+  height: 200px;
+  float: left;
+  padding: 10px;
+  border-color: #fff;
+}
+/*END DEFAULT STYLES*/
+/*TRANSITIONS*/
+#parent-div {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+#nav {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+#nav li {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+/*END TRANSITIONS*/
+/*STATES*/
+.example1 #parent-div {
+  background-color: #C2E5EB;
+}
+.example2 {
+  /*nth-child*/
+
+}
+.example2 #nav li:nth-child(2n+1) {
+  background-color: #C2E5EB;
+}
+.example2 #parent-div {
+  background-color: #42B4C4;
+}
+.example3 {
+  /*nth-child*/
+
+}
+.example3 #nav li:nth-child(2n+0) {
+  background-color: #C2E5EB;
+}
+.example3 #parent-div {
+  background-image: url(http://placekitten.com/800/500);
+  background-color: #9CCA56;
+}
+.example4 #parent-div {
+  /*background-color:#CB4D8C;*/
+
+  color: #fff;
+  background-image: url(http://placekitten.com/g/800/500);
+  /*TRANFORMS*/
+
+  /*	
+	-webkit-transform: rotate(20deg);
+     -moz-transform: rotate(20deg);
+      -ms-transform: rotate(20deg);
+       -o-transform: rotate(20deg);
+          transform: rotate(20deg);
+*/
+
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  -o-transform: scale(0.5);
+  transform: scale(0.5);
+}
+/*END STATES*/

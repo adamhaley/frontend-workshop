@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<!--
+Basic CSS Inheritence
+-->
+
+<div id="wrapper" class="example1">
+
+	
+		<ul id="nav">
+			<li id="link1">Example 1</li>
+			<li id="link2">Example 2</li>
+			<li id="link3">Example 3</li>
+		</ul>
+
+		<div id="parent-div">
+			<div id="child1"> 
+				Child1 Test Text
+			<div>
+			<div id="child2">
+				Child2 lorem ipsum
+			</div>
+		</div>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+<script>
+	
+	$(document).ready(function(){
+		
+		$('#link1').click(function(){
+			$('#wrapper').attr('class','example1');
+		});
+
+		$('#link2').click(function(){
+			$('#wrapper').attr('class','example2');
+		});
+
+		$('#link3').click(function(){
+			$('#wrapper').attr('class','example3');
+		}); 
+
+ 	});
+
+</script>
+
+</body>
+</html>

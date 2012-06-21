@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<!--
+Basic CSS Inheritence
+-->
+
+<div id="wrapper" class="example1">
+
+	
+		<ul id="nav">
+			<li id="link1">Link 1</li>
+			<li id="link2">Link 2</li>
+			<li id="link3">Link 3</li>
+			<li id="link4">Link 4</li>
+			<div id="lipsum">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</div>
+	
+		</ul>
+
+		<div id="parent-div">
+			
+			<div id="child1">
+				Lorem ipsum dolor sit amet
+			</div>
+			<div id="child2">
+				onsectetur adipisicing elit
+			</div>
+			<div id="child3">
+				sed do eiusmod tempor
+			</div>
+			<div id="child4">
+				sed do eiusmod tempor
+			</div>
+
+		</div>
+
+</div>
+
+<script>
+	document.getElementById('link1').onclick = function(){
+		document.getElementById('wrapper').className = 'example1';
+	}
+	document.getElementById('link2').onclick = function(){
+		document.getElementById('wrapper').className = 'example2';
+	}
+	document.getElementById('link3').onclick = function(){
+		document.getElementById('wrapper').className = 'example3';
+	}
+	document.getElementById('link4').onclick = function(){
+		document.getElementById('wrapper').className = 'example4';
+	}
+</script>
+
+</body>
+</html>
